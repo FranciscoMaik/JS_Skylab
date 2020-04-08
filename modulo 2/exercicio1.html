@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="atv">
+        <button id="butao"> clique aqui </button>
+        <div id="ondeVaiAparecerOsQuadrados">
+
+        </div>
+    </div>
+
+    <script>
+        var botaoClick = document.querySelector('button#butao');  
+        function estilizarElementos(){
+            var styleBoxElement = document.getElementsByTagName('input');
+            
+            for(elemento of styleBoxElement){
+                elemento.style.width = "100px";
+                elemento.style.height = "100px";
+                elemento.style.backgroundColor = '#f00';
+            }
+            
+        }
+
+        botaoClick.onclick = function(){
+            var createElementDiv = document.createElement('input');
+            createElementDiv.setAttribute('disabled','true')
+            var boxElement = document.querySelector('#ondeVaiAparecerOsQuadrados');
+            boxElement.appendChild(createElementDiv);
+
+            estilizarElementos();
+
+        }
+        
+    </script>
+</body>
+</html>

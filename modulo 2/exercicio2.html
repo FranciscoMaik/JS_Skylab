@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="atv">
+        <button id="butao"> clique aqui </button>
+        <div id="ondeVaiAparecerOsQuadrados">
+
+        </div>
+    </div>
+
+    <script>
+        var botaoClick = document.querySelector('button#butao');  
+        function estilizarElementos(){
+            var styleBoxElement = document.getElementsByTagName('p');
+            
+            for(elemento of styleBoxElement){
+                elemento.style.width = "100px";
+                elemento.style.height = "100px";
+                elemento.style.backgroundColor = '#f00';
+            }
+            
+        }
+        function getGenerationColor(){
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++){
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+
+            return color;
+        }
+
+        
+        function mudarCor(object){
+            var colorRec = getGenerationColor();
+            object.style.backgroundColor = (colorRec);
+        }
+
+        botaoClick.onclick = function(){
+            var createElementDiv = document.createElement('p');
+            createElementDiv.setAttribute('class','quadrado')
+            createElementDiv.setAttribute('onmouseover','mudarCor(this);')
+            var boxElement = document.querySelector('#ondeVaiAparecerOsQuadrados');
+            boxElement.appendChild(createElementDiv);
+            
+            estilizarElementos();
+
+        }
+    </script>
+</body>
+</html>

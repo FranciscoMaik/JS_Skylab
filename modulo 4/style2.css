@@ -1,0 +1,97 @@
+input{
+    width: 500px;
+    height: 30px;
+    margin-right: 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    padding-left: 18px;;
+}
+
+button{
+    background-color:chartreuse;
+    font-size: 18px;;
+    height: 38px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: black;
+    font-weight: bold;
+}
+button:hover{
+    background-color: blueviolet;
+}
+
+ul img{
+    position:relative;
+    top:50%;
+    left:50%;
+    margin-left: -9%;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: black;
+}
+ ul h2{
+     font-size: 30px;
+     text-align: center;
+     text-transform: uppercase;
+ }
+
+ ul li{
+     background-color: #ccffff;
+     padding: 18px;
+     border-radius: 8px;
+     list-style-type: none;
+     font-size: 20px;
+     margin-top: 15px;
+     font-weight: bold;
+     text-transform: uppercase;
+     width: 90vw;
+ }
+
+ ul li p{
+     margin-top: 2px;
+     margin-left: 15px;
+     font-size: 18px;
+     font-weight: normal;
+     text-transform: none;
+ }
+ 
+ ul li a{
+    text-transform: none;
+     text-decoration: none;
+     margin-left:15px;
+     color: #3D6999;
+     
+ }
+
+ ul li a:hover{
+     color:#7DB3B3;
+ }
+ 
+ .circle{
+    display: none;
+}
+
+
+ #waveID {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    box-sizing: border-box;
+    border: solid 20px rgba(14, 2, 2, 0.2);
+    border-top-color: rgb(182, 32, 32);
+    animation: spin 1s infinite linear;
+    position:relative;
+    left: 50%;
+    margin-top:34vh;
+    margin-left:-50px;
+}
+
+@keyframes spin { 
+    100% { 
+      transform: rotate(360deg); 
+    } 
+} 

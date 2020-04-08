@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usuarios = [ 
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        for(usuario of usuarios){
+            console.log("O",usuario.nome,
+            "possui as habilidades:",
+            usuario.habilidades.join(','));
+
+            //iteração em Array com for ... of ...
+            //juntar todos os elementos de um Array com o join e colocando o separador
+        }
+    </script>
+</body>
+</html>

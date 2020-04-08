@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <div class="master">
+        <ul id="lista">
+
+        </ul>
+    </div>
+</head>
+<body>
+   <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"]; 
+      
+      for (nome of nomes){
+        var creatLista = document.createElement('li');
+        var creatName = document.createTextNode(nome);
+        creatLista.appendChild(creatName);
+
+        var ulLista = document.querySelector("#lista");
+        ulLista.appendChild(creatLista);
+      }
+   </script> 
+</body>
+</html>

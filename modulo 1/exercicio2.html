@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pares(x, y){
+            if (x > y){
+                var a = x;
+                x = y;
+                y = a;
+            }
+
+            for(var i=x; i<=y; i++){
+                if(i % 2 == 0){
+                    console.log(i);
+                }
+            }
+        }
+
+        pares(321,32)
+    </script>
+</body>
+</html>

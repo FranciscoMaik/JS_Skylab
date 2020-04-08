@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function temHabilidade(skills){
+            var teste = skills.indexOf("Javascript");
+
+            return teste !== -1 ? true : false;
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        console.log(temHabilidade(skills));
+    </script>
+</body>
+</html>
